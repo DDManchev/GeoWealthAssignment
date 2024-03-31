@@ -19,7 +19,7 @@ public class Main {
       Set<String> allWords = WordsLoad.loadWordsFromSource();
       long startTime = System.currentTimeMillis();
       Set<String> result = buildUpWords(allWords);
-      result.forEach(System.out::println);
+      System.out.println("9 letter valid words count: " + result.size());
       System.out.println("Elapsed time: " + (System.currentTimeMillis() - startTime) + " ms");
     } catch (IOException e) {
       System.err.println("Failed to load words: " + e.getMessage());
